@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@-webkit-keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 48vh; }
+  50% {
+    left: 50%;
+    top: 57vh; }
+  100% {
+    left: 105%;
+    top: 47vh; } }
+@keyframes duck-fly-1 {
+  0% {
+    left: -55px;
+    top: 48vh; }
+  50% {
+    left: 50%;
+    top: 57vh; }
+  100% {
+    left: 105%;
+    top: 47vh; } }
+
+@-webkit-keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 12vh; }
+  50% {
+    left: 50%;
+    top: 60vh; }
+  100% {
+    left: 105%;
+    top: 51vh; } }
+
+@keyframes duck-fly-2 {
+  0% {
+    left: -55px;
+    top: 12vh; }
+  50% {
+    left: 50%;
+    top: 60vh; }
+  100% {
+    left: 105%;
+    top: 51vh; } }
+
+@-webkit-keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 41vh; }
+  50% {
+    left: 50%;
+    top: 19vh; }
+  100% {
+    left: 105%;
+    top: 65vh; } }
+
+@keyframes duck-fly-3 {
+  0% {
+    left: -55px;
+    top: 41vh; }
+  50% {
+    left: 50%;
+    top: 19vh; }
+  100% {
+    left: 105%;
+    top: 65vh; } }
+
+@-webkit-keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 72vh; }
+  50% {
+    left: 50%;
+    top: 28vh; }
+  100% {
+    left: 105%;
+    top: 15vh; } }
+
+@keyframes duck-fly-4 {
+  0% {
+    left: -55px;
+    top: 72vh; }
+  50% {
+    left: 50%;
+    top: 28vh; }
+  100% {
+    left: 105%;
+    top: 15vh; } }
+
+@-webkit-keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 42vh; }
+  50% {
+    left: 50%;
+    top: 10vh; }
+  100% {
+    left: 105%;
+    top: 40vh; } }
+
+@keyframes duck-fly-5 {
+  0% {
+    left: -55px;
+    top: 42vh; }
+  50% {
+    left: 50%;
+    top: 10vh; }
+  100% {
+    left: 105%;
+    top: 40vh; } }
+
+@-webkit-keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 69vh; }
+  50% {
+    left: 50%;
+    top: 24vh; }
+  100% {
+    left: 105%;
+    top: 17vh; } }
+
+@keyframes duck-fly-6 {
+  0% {
+    left: -55px;
+    top: 69vh; }
+  50% {
+    left: 50%;
+    top: 24vh; }
+  100% {
+    left: 105%;
+    top: 17vh; } }
+
+body {
+  background-image: url(https://i.ytimg.com/vi/i9R8MqilMW8/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /*сбрасываем счётчик*/
+  counter-reset: count;
+  position: relative; }
+
+h1 {
+  position: absolute;
+  bottom: -16px;
+  left: 32px; }
+
+input[type="checkbox"] {
+  visibility: hidden;
+  left: -99999px;
+  position: absolute; }
+
+.duck-1 {
+  position: absolute;
+  -webkit-animation: duck-fly-1 6s linear 1s 1 both;
+          animation: duck-fly-1 6s linear 1s 1 both; }
+
+.duck-2 {
+  position: absolute;
+  -webkit-animation: duck-fly-2 6s linear 2s 1 both;
+          animation: duck-fly-2 6s linear 2s 1 both; }
+
+.duck-3 {
+  position: absolute;
+  -webkit-animation: duck-fly-3 6s linear 3s 1 both;
+          animation: duck-fly-3 6s linear 3s 1 both; }
+
+.duck-4 {
+  position: absolute;
+  -webkit-animation: duck-fly-4 6s linear 4s 1 both;
+          animation: duck-fly-4 6s linear 4s 1 both; }
+
+.duck-5 {
+  position: absolute;
+  -webkit-animation: duck-fly-5 6s linear 5s 1 both;
+          animation: duck-fly-5 6s linear 5s 1 both; }
+
+.duck-6 {
+  position: absolute;
+  -webkit-animation: duck-fly-6 6s linear 6s 1 both;
+          animation: duck-fly-6 6s linear 6s 1 both; }
+
+img {
+  width: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+input[type="checkbox"]:checked {
+  counter-increment: count; }
+
+input[type="checkbox"]:checked + img {
+  visibility: hidden;
+  display: none; }
+
+h1::after {
+  content: " " counter(count); }

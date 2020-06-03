@@ -1,0 +1,25 @@
+{
+  "name": "duckhunting",
+  "version": "1.0.0",
+  "description": "old game duck hunting",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olga Myazina",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7"
+  }
+}
