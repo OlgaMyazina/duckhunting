@@ -20,6 +20,6 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.0",
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.10"
   }
 }
